@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 contactList.add(Contact(
                     cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)),
                     cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER))
-                )
+                ))
             }
             cursor.close()
         }
